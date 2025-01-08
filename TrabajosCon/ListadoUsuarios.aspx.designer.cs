@@ -11,16 +11,16 @@ namespace TrabajosCon
 {
 
 
-    public partial class ListadoConciertos
+    public partial class ListadoUsuarios
     {
 
         /// <summary>
-        /// Control TableLiteral.
+        /// Control gvUsuarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal TableLiteral;
+        protected global::System.Web.UI.WebControls.GridView gvUsuarios;
     }
 }
