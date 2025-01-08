@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/portada.aspx">Portada</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/ListadoConciertos.aspx">Concierto</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/ListadoUsuarios.aspx">Usuarios</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/ListadoCompositores.aspx">Compositores</a></li>

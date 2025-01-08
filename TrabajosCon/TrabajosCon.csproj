@@ -128,6 +128,7 @@
     <Content Include="ListadoConciertos.aspx" />
     <Content Include="ListadoRepertorios.aspx" />
     <Content Include="ListadoUsuarios.aspx" />
+    <Content Include="portada.aspx" />
     <Content Include="repertorios.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -265,6 +266,13 @@
     </Compile>
     <Compile Include="ListadoUsuarios.aspx.designer.cs">
       <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portada.aspx.cs">
+      <DependentUpon>portada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portada.aspx.designer.cs">
+      <DependentUpon>portada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repertorios.aspx.cs">
