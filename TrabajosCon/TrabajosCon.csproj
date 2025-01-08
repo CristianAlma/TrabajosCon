@@ -124,6 +124,7 @@
     <Content Include="editarusuarios.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="ListadoCompositores.aspx" />
     <Content Include="listadoconciertos.aspx" />
     <Content Include="listarusuarios.aspx" />
     <Content Include="repertorios.aspx" />
@@ -236,6 +237,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoCompositores.aspx.cs">
+      <DependentUpon>ListadoCompositores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListadoCompositores.aspx.designer.cs">
+      <DependentUpon>ListadoCompositores.aspx</DependentUpon>
     </Compile>
     <Compile Include="listadoconciertos.aspx.cs">
       <DependentUpon>listadoconciertos.aspx</DependentUpon>
