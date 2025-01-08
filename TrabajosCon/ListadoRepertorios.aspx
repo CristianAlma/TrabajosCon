@@ -6,12 +6,18 @@
         <div class="text-right mb-3">
             <a href="repertorios.aspx" class="btn btn-primary">Agregar Repertorio</a>
         </div>
-        <asp:GridView ID="gvRepertorios" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False">
-            <Columns>
-                <asp:BoundField DataField="NombreObra" HeaderText="Nombre de la Obra" />
-                <asp:BoundField DataField="Concierto" HeaderText="Concierto" />
-                <asp:BoundField DataField="Compositor" HeaderText="Compositor" />
-            </Columns>
-        </asp:GridView>
+        
+       
+        <div class="row mt-5"> 
+            <div class="col-md-12">
+                <asp:GridView ID="gvRepertorios" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:BoundField DataField="NombreObra" HeaderText="Nombre de la Obra" />
+                        <asp:BoundField DataField="Concierto" HeaderText="Concierto" />
+                        <asp:BoundField DataField="Compositor" HeaderText="Compositor" />
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
     </div>
 </asp:Content>

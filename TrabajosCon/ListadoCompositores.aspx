@@ -6,11 +6,16 @@
         <div class="text-right mb-3">
             <a href="compositores.aspx" class="btn btn-primary">Agregar Compositor</a>
         </div>
-        <asp:GridView ID="gvCompositores" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False">
-            <Columns>
-                <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
-                <asp:BoundField DataField="Bibliografia" HeaderText="Bibliografía" />
-            </Columns>
-        </asp:GridView>
+
+        <div class="row mt-5"> 
+            <div class="col-md-12">
+                <asp:GridView ID="gvCompositores" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                        <asp:BoundField DataField="Bibliografia" HeaderText="Bibliografía" />
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
     </div>
 </asp:Content>

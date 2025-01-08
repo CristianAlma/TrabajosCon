@@ -2,26 +2,37 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container mt-5">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-md-8">
+      
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
                 <h2>Listado de Conciertos</h2>
             </div>
-            <div class="col-md-4 text-right">
+        </div>
+        
+    
+        <div class="row mb-5"> 
+            <div class="col-md-12">
                 <a href="conciertos.aspx" class="btn btn-primary">Agregar Concierto</a>
             </div>
         </div>
-        <table class="table table-bordered mt-3">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Nombre del Concierto</th>
-                    <th>Fecha</th>
-                    <th>Ubicación</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <asp:Literal ID="TableLiteral" runat="server"></asp:Literal>
-            </tbody>
-        </table>
+
+       
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <table class="table table-striped table-bordered text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nombre del Concierto</th>
+                            <th>Fecha</th>
+                            <th>Ubicación</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <asp:Literal ID="TableLiteral" runat="server"></asp:Literal>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </asp:Content>
