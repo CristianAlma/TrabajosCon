@@ -1,38 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Web.UI;
+using TrabajosCon.Services;
+using TrabajosCon.Models;
 
 namespace TrabajosCon
 {
-    public partial class ListadoUsuarios : Page
+    public partial class ListadoUsuarios : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarUsuarios();
+                // Crear instancia de UsuarioService
+                UsuarioService usuarioService = new UsuarioService();
+
+                // Obtener lista de usuarios desde la base de datos
+                List<Usuario> usuarios = usuarioService.ObtenerUsuarios();
+
+                // Verificar si la lista contiene datos
+                if (usuarios.Count > 0)
+                {
+                    // Vincular los usuarios al GridView
+                    gvUsuarios.DataSource = usuarios;
+                    gvUsuarios.DataBind();
+                }
+                else
+                {
+                    // Mostrar mensaje si no hay usuarios
+                    
+                }
             }
-        }
-
-        private void CargarUsuarios()
-        {
-            // Lista simulada
-            var usuarios = new List<Usuario>
-            {
-                new Usuario { Nombre = "Juan Pérez", Correo = "juan.perez@example.com", Telefono = "1234567890", Estado = "Activo" },
-                new Usuario { Nombre = "Ana López", Correo = "ana.lopez@example.com", Telefono = "0987654321", Estado = "Inactivo" }
-            };
-
-            gvUsuarios.DataSource = usuarios;
-            gvUsuarios.DataBind();
-        }
-
-        public class Usuario
-        {
-            public string Nombre { get; set; }
-            public string Correo { get; set; }
-            public string Telefono { get; set; }
-            public string Estado { get; set; }
         }
     }
 }

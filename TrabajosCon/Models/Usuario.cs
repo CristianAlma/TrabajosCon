@@ -2,6 +2,12 @@
 {
     public class Usuario
     {
+        internal int Id;
+        internal string Nombre;
+        internal string Correo;
+        internal string Telefono;
+        internal bool Estado;
+
         public int id_usu { get; set; }
         public string nombre_usu { get; set; }
         public string correo_usu { get; set; }

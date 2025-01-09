@@ -11,10 +11,10 @@
             <div class="col-md-12">
                 <asp:GridView ID="gvUsuarios" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False">
                     <Columns>
-                        <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
-                        <asp:BoundField DataField="Correo" HeaderText="Correo" />
-                        <asp:BoundField DataField="Telefono" HeaderText="Teléfono" />
-                        <asp:BoundField DataField="Estado" HeaderText="Estado" />
+                        <asp:BoundField DataField="nombre_usu" HeaderText="Nombre" SortExpression="nombre_usu" />
+                        <asp:BoundField DataField="correo_usu" HeaderText="Correo" SortExpression="correo_usu" />
+                        <asp:BoundField DataField="telefono_usu" HeaderText="Teléfono" SortExpression="telefono_usu" />
+                        <asp:BoundField DataField="estado_usu" HeaderText="Estado" SortExpression="estado_usu" />
                     </Columns>
                 </asp:GridView>
             </div>
