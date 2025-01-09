@@ -47,6 +47,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -267,6 +270,10 @@
     <Compile Include="ListadoUsuarios.aspx.designer.cs">
       <DependentUpon>ListadoUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Compositores.cs" />
+    <Compile Include="Models\Concierto.cs" />
+    <Compile Include="Models\Repertorio.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="portada.aspx.cs">
       <DependentUpon>portada.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +289,7 @@
     <Compile Include="repertorios.aspx.designer.cs">
       <DependentUpon>repertorios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Services\UsuarioService.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
